@@ -1,9 +1,6 @@
 package com.api.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Transcript{
@@ -15,6 +12,10 @@ public class Transcript{
     private String text;
     private String lang;
     private float duration;
+
+    @OneToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name = "feedback_id")
+    private Feedback feedback;
 
     protected Transcript(){}
 
@@ -40,6 +41,14 @@ public class Transcript{
 
     public Long getUserId(){
         return this.userId;
+    }
+
+    public void setFeedback(Feedback feedback){
+        this.feedback = feedback;
+    }
+
+    public Feedback getFeedback(){
+        return this.feedback;
     }
 
     public String toString() {

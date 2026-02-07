@@ -1,9 +1,7 @@
-package main.java.com.api.models;
+package com.api.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
 public class Feedback{
@@ -12,14 +10,16 @@ public class Feedback{
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     private float clarity;
-    private String[] strengths;
-    private String[] improvements;
+    @ElementCollection
+    private List<String> strengths;
+    @ElementCollection
+    private List<String> improvements;
 
-    public Feedback( float clarity, String[] strengths, String[] improvments){
+    public Feedback( float clarity, List<String> strengths, List<String>  improvements){
 
         this.clarity = clarity;
         this.strengths = strengths;
-        this.improvements = improvments;
+        this.improvements =  improvements;
     }
 
     protected Feedback(){}
@@ -28,12 +28,19 @@ public class Feedback{
         return this.id;
     }
 
-    public String[] getStrength(){
+    public List<String> getStrength(){
         return this.strengths;
     }
 
-
-    public String[] getImprovments(){
+    public List<String> getImprovements(){
         return this.improvements;
+    }
+
+    public float getClarity(){
+        return this.clarity;
+    }
+
+    public String toString(){
+        return this.clarity + "";
     }
 }
