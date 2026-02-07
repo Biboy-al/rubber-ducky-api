@@ -26,7 +26,7 @@ public class DataLoad {
 	public CommandLineRunner demo(TranscriptRepo TransRepo, FeedbackRepo FeedbackRepo) {
 		return (arg) -> {
 
-            Transcript transcriptTest = new Transcript(0L,"hii", "eng", 100);
+            Transcript transcriptTest = new Transcript(0L,"hiissssss", "eng", 100);
 
             List<String> strengths = new ArrayList<String>(List.of("hii", "eng", "hii"));
             List<String> improvements = new ArrayList<>(List.of("hii", "eng", "hii"));
