@@ -28,10 +28,6 @@ public class Feedback{
         return this.id;
     }
 
-    public Transcript getTranscript(){
-        return this.transcript;
-    }
-
     public String[] getStrength(){
         return this.strengths;
     }
