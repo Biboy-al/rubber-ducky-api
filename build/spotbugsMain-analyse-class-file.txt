@@ -1,0 +1,10 @@
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/repos/TranscriptRepo.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/repos/FeedbackRepo.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/models/Transcript.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/models/Feedback.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/ApiApplication.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/controllers/AudioController.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/controllers/FeedbackController.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/services/OpenAITranscribeService.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/services/TransribeService.class
+/Users/biboy/Desktop/projects/rubber-ducky-api/build/classes/java/main/com/api/DataLoad.class

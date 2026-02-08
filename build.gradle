@@ -1,7 +1,8 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '4.0.2'
+	id 'org.springframework.boot' version '3.5.0'
 	id 'io.spring.dependency-management' version '1.1.7'
+	id 'com.github.spotbugs' version "6.4.8"
 }
 
 group = 'com'
@@ -16,29 +17,36 @@ java {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/milestone' }
-	maven { url 'https://repo.spring.io/snapshot' }
+	maven { url = uri('https://repo.spring.io/milestone') }
+	maven { url = uri('https://repo.spring.io/snapshot') }
 	maven {
 		name = 'Central Portal Snapshots'
-		url = 'https://central.sonatype.com/repository/maven-snapshots/'
+		url = uri('https://central.sonatype.com/repository/maven-snapshots/')
 	}
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-restclient'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.postgresql:postgresql'
 	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
-	testImplementation 'org.springframework.boot:spring-boot-starter-restclient-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	runtimeOnly 'com.h2database:h2'
 
 	implementation platform("org.springframework.ai:spring-ai-bom:1.0.0")
 	implementation 'org.springframework.ai:spring-ai-openai'
 	implementation 'org.springframework.ai:spring-ai-starter-model-openai'
+	spotbugs("com.github.spotbugs:spotbugs:4.9.3")
+	spotbugsPlugins("com.h3xstream.findsecbugs:findsecbugs-plugin:1.14.0")
+	spotbugs "com.github.spotbugs:spotbugs:4.9.3"
+
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+spotbugs {
+
 }

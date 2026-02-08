@@ -62,7 +62,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">1.400s</div>
+<div class="counter">2.355s</div>
 <p>duration</p>
 </div>
 </td>
@@ -99,7 +99,7 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.234s</td>
+<td>0.262s</td>
 <td class="success">100%</td>
 </tr>
 </table>
@@ -108,8 +108,8 @@
 <div class="tab">
 <h2>standard output</h2>
 <span class="code">
-<pre id="root-0-test-stdout-com.api.ApiApplicationTests">14:50:12.756 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.api.ApiApplicationTests]: ApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:50:12.789 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.api.ApiApplication for test class com.api.ApiApplicationTests
+<pre id="root-0-test-stdout-com.api.ApiApplicationTests">14:47:17.316 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.api.ApiApplicationTests]: ApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:47:17.397 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.api.ApiApplication for test class com.api.ApiApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -118,39 +118,68 @@
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
 
- :: Spring Boot ::                (v4.0.2)
+ :: Spring Boot ::                (v3.5.0)
 
-2026-02-07T14:50:12.903+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplicationTests              : Starting ApiApplicationTests using Java 24 with PID 5043 (started by biboy in /Users/biboy/Desktop/projects/rubber-ducky-api)
-2026-02-07T14:50:12.903+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplicationTests              : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-02-07T14:50:13.054+13:00  INFO 5043 --- [api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-02-07T14:50:13.066+13:00  INFO 5043 --- [api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
-2026-02-07T14:50:13.180+13:00  INFO 5043 --- [api] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-07T14:50:13.194+13:00  INFO 5043 --- [api] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
-2026-02-07T14:50:13.327+13:00  INFO 5043 --- [api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-02-07T14:50:13.337+13:00  INFO 5043 --- [api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-02-07T14:50:13.389+13:00  INFO 5043 --- [api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-02-07T14:50:13.389+13:00  INFO 5043 --- [api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-02-07T14:50:13.396+13:00  WARN 5043 --- [api] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-02-07T14:50:13.404+13:00  INFO 5043 --- [api] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:testdb]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: TESTDB/PUBLIC
+2026-02-08T14:47:17.672+13:00  INFO 32111 --- [api] [    Test worker] com.api.ApiApplicationTests              : Starting ApiApplicationTests using Java 24 with PID 32111 (started by biboy in /Users/biboy/Desktop/projects/rubber-ducky-api)
+2026-02-08T14:47:17.673+13:00  INFO 32111 --- [api] [    Test worker] com.api.ApiApplicationTests              : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-02-08T14:47:17.993+13:00  INFO 32111 --- [api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-08T14:47:18.040+13:00  INFO 32111 --- [api] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2026-02-08T14:47:18.175+13:00  INFO 32111 --- [api] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-08T14:47:18.195+13:00  INFO 32111 --- [api] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-02-08T14:47:18.208+13:00  INFO 32111 --- [api] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-08T14:47:18.299+13:00  INFO 32111 --- [api] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-08T14:47:18.309+13:00  INFO 32111 --- [api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-08T14:47:18.394+13:00  INFO 32111 --- [api] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44e08a7a
+2026-02-08T14:47:18.394+13:00  INFO 32111 --- [api] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-08T14:47:18.429+13:00  INFO 32111 --- [api] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.11
 	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DataSourceConnectionProvider
+	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-07T14:50:13.662+13:00  INFO 5043 --- [api] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-07T14:50:13.675+13:00  INFO 5043 --- [api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-02-07T14:50:13.706+13:00  INFO 5043 --- [api] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-02-07T14:50:13.782+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplicationTests              : Started ApiApplicationTests in 0.949 seconds (process running for 1.376)
-2026-02-07T14:50:13.812+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplication                   : Customers found with findAll():
-2026-02-07T14:50:13.812+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplication                   : -------------------------------
-2026-02-07T14:50:13.863+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplication                   : Transcript[id=1, userId=0, text='hii', lang='eng', duration=100.000000]
-2026-02-07T14:50:13.863+13:00  INFO 5043 --- [api] [    Test worker] com.api.ApiApplication                   : 
+2026-02-08T14:47:18.728+13:00  INFO 32111 --- [api] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-08T14:47:18.848+13:00  INFO 32111 --- [api] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-08T14:47:19.118+13:00  WARN 32111 --- [api] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-08T14:47:19.236+13:00  INFO 32111 --- [api] [    Test worker] com.api.ApiApplicationTests              : Started ApiApplicationTests in 1.737 seconds (process running for 2.493)
+Hibernate: select nextval('transcript_seq')
+Hibernate: select nextval('feedback_seq')
+Hibernate: insert into feedback (clarity,id) values (?,?)
+Hibernate: insert into transcript (duration,feedback_id,lang,text,user_id,id) values (?,?,?,?,?,?)
+Hibernate: insert into feedback_improvements (feedback_id,improvements) values (?,?)
+Hibernate: insert into feedback_improvements (feedback_id,improvements) values (?,?)
+Hibernate: insert into feedback_improvements (feedback_id,improvements) values (?,?)
+Hibernate: insert into feedback_strengths (feedback_id,strengths) values (?,?)
+Hibernate: insert into feedback_strengths (feedback_id,strengths) values (?,?)
+Hibernate: insert into feedback_strengths (feedback_id,strengths) values (?,?)
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+Hibernate: select i1_0.feedback_id,i1_0.improvements from feedback_improvements i1_0 where i1_0.feedback_id=?
+Hibernate: select s1_0.feedback_id,s1_0.strengths from feedback_strengths s1_0 where s1_0.feedback_id=?
+2026-02-08T14:47:19.286+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Customers found with findAll():
+2026-02-08T14:47:19.286+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+Hibernate: select t1_0.id,t1_0.duration,t1_0.feedback_id,t1_0.lang,t1_0.text,t1_0.user_id from transcript t1_0
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+Hibernate: select f1_0.id,f1_0.clarity from feedback f1_0 where f1_0.id=?
+2026-02-08T14:47:19.325+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Transcript[id=1, userId=0, text='hii', lang='eng', duration=100.000000]
+2026-02-08T14:47:19.325+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 1000.0
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Transcript[id=2, userId=0, text='hii', lang='eng', duration=100.000000]
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 1000.0
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Transcript[id=52, userId=0, text='hii', lang='eng', duration=100.000000]
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 1000.0
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Transcript[id=102, userId=0, text='hiissssss', lang='eng', duration=100.000000]
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 1000.0
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : Transcript[id=152, userId=0, text='hiissssss', lang='eng', duration=100.000000]
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : -------------------------------
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 1000.0
+2026-02-08T14:47:19.326+13:00  INFO 32111 --- [api] [    Test worker] com.api.DataLoad                         : 
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.api.ApiApplicationTests">Copy</button>
 </span>
@@ -165,7 +194,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.3.0</a> at 7 Feb 2026, 2:50:14 pm</p>
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 8 Feb 2026, 2:47:19 pm</p>
 </div>
 </div>
 </body>
