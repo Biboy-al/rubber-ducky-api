@@ -25,13 +25,11 @@ public class AudioController {
     @GetMapping("/upload")
     public String transcript(@RequestParam(name="path") String path) {
 
-        Resource audio = new ClassPathResource(path);
+//        Resource audio = new ClassPathResource(path);
 
-        String uid = UUID.randomUUID().toString();
+//        Transcript transcript =  this.transribeService.transcript(audio);
 
-        Transcript transcript =  this.transribeService.transript(audio);
-
-        return uid;
+        return UUID.randomUUID().toString();
     }
 
 

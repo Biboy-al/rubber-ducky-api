@@ -20,7 +20,7 @@ public class OpenAITranscribeService implements TransribeService {
     }
 
     @Override
-    public Transcript transript(Resource audio) {
+    public Transcript transcript(Resource audio) {
         AudioTranscriptionPrompt transcriptRequest = new AudioTranscriptionPrompt(audio, null);
         AudioTranscriptionResponse response = openAiTranscriptionModel.call(transcriptRequest);
        String text = response.getResult().getOutput();

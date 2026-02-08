@@ -20,8 +20,8 @@ public class FeedbackController {
 
 
     @GetMapping("/")
-    public Feedback feedback(@RequestParam("id") int feedbackId){
-        return null;
+    public int feedback(@RequestParam("id") int feedbackId){
+        return 1;
     }
 
     

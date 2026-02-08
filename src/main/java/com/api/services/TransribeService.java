@@ -7,5 +7,5 @@ import javax.sound.sampled.AudioFileFormat;
 
 public interface TransribeService {
 
-    public Transcript transript(Resource format);
+    public Transcript transcript(Resource format);
 }

@@ -1,6 +1,8 @@
 package com.api.models;
 
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,8 +20,9 @@ public class Feedback{
     public Feedback( float clarity, List<String> strengths, List<String>  improvements){
 
         this.clarity = clarity;
-        this.strengths = strengths;
-        this.improvements =  improvements;
+        // Creates copies of object so they are not imutable later on
+        this.strengths = new ArrayList<>(strengths);
+        this.improvements =  new ArrayList<>(improvements);
     }
 
     protected Feedback(){}
@@ -29,11 +32,11 @@ public class Feedback{
     }
 
     public List<String> getStrength(){
-        return this.strengths;
+        return new ArrayList<>(this.strengths);
     }
 
     public List<String> getImprovements(){
-        return this.improvements;
+        return new ArrayList<>(this.improvements);
     }
 
     public float getClarity(){
